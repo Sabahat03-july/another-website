@@ -1,4 +1,3 @@
-import { Container } from "postcss";
 import type { Config } from "tailwindcss";
 
 export default {
@@ -8,17 +7,16 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "15px",
+    },
     extend: {
-      Container :{
-        center: true,
-        padding: "15px"
-      },
-      colors:{
+      colors: {
         accent: "#6BAD0D",
-        accentDark: "629F0C",
-      }
-      
+        accentDark: "#629F0C", // Missing # fixed
       },
     },
+  },
   plugins: [],
 } satisfies Config;
