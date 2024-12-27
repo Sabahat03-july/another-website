@@ -7,7 +7,7 @@ const Hero = () => {
       {/* Left side: Text Content */}
       <div className="flex flex-col justify-center items-start gap-4 sm:gap-6">
         <p className="text-[#0099cc] text-xl mt-8 sm:mt-0 font-semibold">
-          SHOP OUR FRESHEST
+          SHOP OUR FRESHEST!
         </p>
         <h2 className="sm:text-5xl text-3xl font-bold leading-tight">
           FRESH HAND-PICKED
