@@ -4,6 +4,7 @@ import { FaRegHeart } from 'react-icons/fa';
 import { IoSearch } from 'react-icons/io5';
 import { BiSupport } from 'react-icons/bi';
 import { CiMenuFries } from 'react-icons/ci';
+import Link from 'next/link';
 
 export interface IProduct {
   id: number;
@@ -65,9 +66,9 @@ const Navbar = ({ cart, setCartOpen }: PropsType) => {
               <p>BROWSE CATEGORY</p>
             </button>
             <ul className="flex items-center gap-6">
-              <li className="text-lg font-medium">HOME</li>
+              <li className="text-lg font-medium"><Link href={"/"}>HOME</Link></li>
               <li className="text-lg font-medium">ABOUT</li>
-              <li className="text-lg font-medium">SHOP</li>
+              <li className="text-lg font-medium"><Link href={"#shop"}>SHOP</Link></li>
               <li className="text-lg font-medium">VEGS</li>
               <li className="text-lg font-medium">ABOUT US</li>
             </ul>
